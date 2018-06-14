@@ -4,8 +4,15 @@
   "description": "An abstract mochaJS testing framework to run through eCommerce basic actions testing scripts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter mochawesome && open mochawesome-report/mochawesome.html"
   },
   "author": "Brian Ellis",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.0.2",
+    "request": "^2.87.0"
+  }
 }

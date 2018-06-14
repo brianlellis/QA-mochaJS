@@ -1,0 +1,267 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-06-14T16:12:13.221Z",
+    "end": "2018-06-14T16:12:13.252Z",
+    "duration": 31,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "6edc3bab-9d6c-465b-9383-e019893a7963",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "32cf89a8-20c8-4d57-8aa2-1a23afd900d7",
+        "title": "Color Code Converter",
+        "fullFile": "/Volumes/Sites/_QA/abstract/test/converter.js",
+        "file": "/test/converter.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "16e3d822-f023-492d-9faf-8b1be389301c",
+            "title": "RGB to Hex conversion",
+            "fullFile": "/Volumes/Sites/_QA/abstract/test/converter.js",
+            "file": "/test/converter.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "converts the basic colors",
+                "fullTitle": "Color Code Converter RGB to Hex conversion converts the basic colors",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var redHex      = converter.rgbToHex(255, 0, 0),\n    greenHex    = converter.rgbToHex(0, 255, 0),\n    blueHex     = converter.rgbToHex(0, 0, 255);\nexpect(redHex).to.equal(\"ff0000\");\nexpect(greenHex).to.equal(\"00ff00\");\nexpect(blueHex).to.equal(\"0000ff\");",
+                "err": {},
+                "isRoot": false,
+                "uuid": "483b434f-871a-434c-ac8d-760865b9f463",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "483b434f-871a-434c-ac8d-760865b9f463"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "e22c80fa-7b47-4bf5-b54f-af608dd46de6",
+            "title": "Hex to RGB conversion",
+            "fullFile": "/Volumes/Sites/_QA/abstract/test/converter.js",
+            "file": "/test/converter.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "converts the basic colors",
+                "fullTitle": "Color Code Converter Hex to RGB conversion converts the basic colors",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var red       = converter.hexToRgb(\"ff0000\"),\n    green     = converter.hexToRgb(\"00ff00\"),\n    blue      = converter.hexToRgb(\"0000ff\");\nexpect(red).to.deep.equal([255, 0, 0]);\nexpect(green).to.deep.equal([0, 255, 0]);\nexpect(blue).to.deep.equal([0, 0, 255]);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "1c541d05-f4c4-4209-a053-0f9cdec4ae6e",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "1c541d05-f4c4-4209-a053-0f9cdec4ae6e"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "f17c411c-2321-4a87-96f0-63072574b6d5",
+        "title": "Color Code Converter API",
+        "fullFile": "/Volumes/Sites/_QA/abstract/test/server.js",
+        "file": "/test/server.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "569b31f8-8405-4e4f-9e5e-c683d84023df",
+            "title": "RGB to Hex conversion",
+            "fullFile": "/Volumes/Sites/_QA/abstract/test/server.js",
+            "file": "/test/server.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "returns status 200",
+                "fullTitle": "Color Code Converter API RGB to Hex conversion returns status 200",
+                "timedOut": false,
+                "duration": 3,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "request(url, function(error, response, body) {\n  if (!error && response.statusCode == 200) expect(response.statusCode).to.equal(200);\n});\ndone();",
+                "err": {},
+                "isRoot": false,
+                "uuid": "c9bc75ad-f312-4e85-a49e-bcafc5fdebe3",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "returns the color in hex",
+                "fullTitle": "Color Code Converter API RGB to Hex conversion returns the color in hex",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "request(url, function(error, response, body) {\n  expect(body).to.equal(\"ffffff\");\n});\ndone();",
+                "err": {},
+                "isRoot": false,
+                "uuid": "d57dcb42-009d-49a2-be68-394ed747d716",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "c9bc75ad-f312-4e85-a49e-bcafc5fdebe3",
+              "d57dcb42-009d-49a2-be68-394ed747d716"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 3,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "38591019-1a5c-415e-a192-13fcd9d73c3b",
+            "title": "Hex to RGB conversion",
+            "fullFile": "/Volumes/Sites/_QA/abstract/test/server.js",
+            "file": "/test/server.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "returns status 200",
+                "fullTitle": "Color Code Converter API Hex to RGB conversion returns status 200",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "request(url, function(error, response, body) {\n  if (!error && response.statusCode == 200) expect(response.statusCode).to.equal(200);\n});\ndone();",
+                "err": {},
+                "isRoot": false,
+                "uuid": "d120f57d-a06c-47cb-add1-054e22f89b84",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "returns the color in RGB",
+                "fullTitle": "Color Code Converter API Hex to RGB conversion returns the color in RGB",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "request(url, function(error, response, body) {\n  expect(body).to.equal(\"[0,255,0]\");\n});\ndone();",
+                "err": {},
+                "isRoot": false,
+                "uuid": "d74bee36-5671-4dd3-bf23-245829727387",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "d120f57d-a06c-47cb-add1-054e22f89b84",
+              "d74bee36-5671-4dd3-bf23-245829727387"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
