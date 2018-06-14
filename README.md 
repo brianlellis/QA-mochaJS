@@ -1,0 +1,6 @@
+#How to run 
+ * npm install
+ * node app/server.js
+ * open new shell window
+ * navigate to qa suite dir
+ * npm test
