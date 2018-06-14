@@ -1,0 +1,11 @@
+{
+  "name": "visiture-ab-qa",
+  "version": "1.0.0",
+  "description": "An abstract mochaJS testing framework to run through eCommerce basic actions testing scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Ellis",
+  "license": "ISC"
+}
